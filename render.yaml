@@ -3,8 +3,8 @@ services:
     name: rpl-assist
     runtime: node
     plan: free
-    buildCommand: npm run build
-    startCommand: npm start
+    buildCommand: cd backend && npm install && cd ../frontend && npm install && npm run build
+    startCommand: node backend/src/server.js
     envVars:
       - key: NODE_ENV
         value: production
