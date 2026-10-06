@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import path from "path";
 import dotenv from "dotenv";
+import fs from "fs";
 import { fileURLToPath } from "url";
 import { db } from "./services/storage/database.js";
 import apiRoutes from "./routes/api.js";
@@ -14,9 +15,23 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Enable CORS for frontend dev server
+// Enable CORS
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://127.0.0.1:5173",
+  "http://localhost:3000"
+];
+if (process.env.CLIENT_URL) {
+  allowedOrigins.push(process.env.CLIENT_URL);
+}
+
 app.use(cors({
-  origin: ["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3000"],
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV === "production") {
+      return callback(null, true);
+    }
+    return callback(null, true);
+  },
   credentials: true
 }));
 
@@ -30,15 +45,27 @@ app.use("/uploads", express.static(uploadsDir));
 // Mount main API
 app.use("/api", apiRoutes);
 
-// Root route
-app.get("/", (req, res) => {
-  res.json({
-    message: "RPL Assist API Service - AI-Assisted Recognition of Prior Learning Platform",
-    documentation: "/api/health",
-    targetTrade: "ELECTRICIAN (NSQF Level 4)",
-    rolesSupported: ["WORKER", "ASSESSOR", "ADMIN"]
+// Serve built frontend if available (Production / Render deployment)
+const frontendDist = path.resolve(__dirname, "../../frontend/dist");
+if (fs.existsSync(frontendDist)) {
+  app.use(express.static(frontendDist));
+  app.get("*", (req, res, next) => {
+    if (req.path.startsWith("/api") || req.path.startsWith("/uploads")) {
+      return next();
+    }
+    res.sendFile(path.join(frontendDist, "index.html"));
   });
-});
+} else {
+  // Standalone API root route
+  app.get("/", (req, res) => {
+    res.json({
+      message: "RPL Assist API Service - AI-Assisted Recognition of Prior Learning Platform",
+      documentation: "/api/health",
+      targetTrade: "ELECTRICIAN (NSQF Level 4)",
+      rolesSupported: ["WORKER", "ASSESSOR", "ADMIN"]
+    });
+  });
+}
 
 // Centralized error handling
 app.use((err, req, res, next) => {
