@@ -63,7 +63,7 @@ export default function ConsistencyAnalyticsPage() {
       <div>
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold mb-2">
           <Scale className="w-4 h-4 text-blue-600" />
-          Core Problem Statement Solution • Standardized Scoring Consistency
+          National Assessment Framework • Standardized Scoring Consistency
         </div>
         <h1 className="text-2xl sm:text-3xl font-extrabold font-display text-slate-900">
           Assessor Consistency & Scoring Variance Analytics

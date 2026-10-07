@@ -37,15 +37,16 @@ export default function Footer() {
       {/* Main Footer Links */}
       <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <div className="flex items-center gap-2 text-white font-bold font-display text-base mb-2">
-            <Zap className="w-5 h-5 text-amber-400 fill-amber-400" />
-            RPL Assist
+          <div className="mb-3">
+            <div className="inline-block bg-white rounded-lg px-2.5 py-1.5 shadow-sm">
+              <img src="/logo.png" alt="MargVedha" className="h-7 w-auto object-contain" />
+            </div>
           </div>
           <p className="text-[11px] leading-relaxed text-slate-400">
             AI-Assisted Recognition of Prior Learning platform designed to formally certify India's informally trained trade workforce across national qualification standards.
           </p>
           <div className="mt-3 text-[10px] text-slate-500">
-            Smart India Hackathon 2026 Prototype
+            National RPL Assessment Initiative
           </div>
         </div>
 
@@ -72,9 +73,9 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-white font-semibold mb-2.5 text-xs uppercase tracking-wider">Official Prototype Notice</h4>
+          <h4 className="text-white font-semibold mb-2.5 text-xs uppercase tracking-wider">Platform Notice</h4>
           <p className="text-[11px] text-slate-400 leading-relaxed">
-            This platform is an academic & hackathon demonstration prototype. It does not replace official national assessment agencies or the National Council for Vocational Education and Training (NCVET).
+            This platform is an AI-assisted evaluation system designed in accordance with the National Council for Vocational Education and Training (NCVET) guidelines to support certified human assessors.
           </p>
           <div className="mt-3 pt-3 border-t border-slate-800 text-[10px] text-slate-500">
             Modular Trade Design: Initial trade <strong className="text-amber-400">ELECTRICIAN (ELE/Q1401)</strong>
@@ -83,7 +84,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-800 py-4 text-center text-[10px] text-slate-500">
-        © 2026 RPL Assist • Built for Recognition of Prior Learning (RPL) Assessment • All rights reserved
+        © 2026 MargVedha • Recognition of Prior Learning (RPL) Assessment Platform • All rights reserved
       </div>
     </footer>
   );

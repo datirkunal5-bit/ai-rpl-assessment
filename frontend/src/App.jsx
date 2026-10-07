@@ -45,7 +45,7 @@ export default function App() {
           <LanguageProvider>
             <NotificationProvider>
               <div className="flex flex-col min-h-screen bg-slate-50 text-slate-800">
-                {/* Persistent Hackathon Quick-Jump Presentation Bar */}
+                {/* Persistent Workflow Quick-Jump Navigator Bar */}
                 <DemoBar />
 
                 {/* Offline Mode Banner */}

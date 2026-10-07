@@ -48,10 +48,17 @@ export default function LandingPage() {
         <div className="absolute inset-0 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:24px_24px] opacity-15"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
+            {/* MargVedha Brand Logo */}
+            <div className="flex justify-center mb-5">
+              <div className="inline-block bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-2.5 shadow-2xl border border-white/20">
+                <img src="/logo.png" alt="MargVedha Logo" className="h-12 sm:h-14 w-auto object-contain" />
+              </div>
+            </div>
+
             {/* National Initiative Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-semibold mb-6 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
-              Smart India Hackathon • Problem Statement: AI-Assisted RPL Assessment Tool
+              National Skill Initiative • AI-Assisted RPL Assessment Platform
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-white leading-tight">
@@ -175,10 +182,10 @@ export default function LandingPage() {
               </ul>
             </div>
 
-            {/* The RPL Assist Solution */}
+            {/* The MargVedha Solution */}
             <div className="bg-white rounded-2xl p-8 border border-emerald-200/80 shadow-sm">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold mb-4">
-                The RPL Assist Solution
+                The MargVedha Solution
               </div>
               <h3 className="text-2xl font-bold font-display text-slate-900 mb-4">
                 Standardized, Scalable, AI-Assisted Assessment
@@ -243,7 +250,7 @@ export default function LandingPage() {
               </div>
               <h4 className="font-bold text-base text-slate-900 mb-2">Assessor Consistency Analytics</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Empowers administrative directorates to monitor scoring variance and inter-assessor agreement (Cohen's Kappa / ICC), directly targeting the problem statement's consistency goal.
+                Empowers administrative directorates to monitor scoring variance and inter-assessor agreement (Cohen's Kappa / ICC), ensuring nationwide assessment consistency.
               </p>
             </div>
           </div>

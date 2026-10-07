@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     // Brand & Navigation
-    brandName: "RPL Assist",
+    brandName: "MargVedha",
     brandSubtitle: "AI-Assisted Recognition of Prior Learning Platform",
     tradeLabel: "Electrician Trade (NSQF Level 4)",
     dashboard: "Dashboard",
@@ -88,7 +88,7 @@ export const translations = {
 
   hi: {
     // Brand & Navigation
-    brandName: "आरपीएल असिस्ट",
+    brandName: "मार्गवेध (MargVedha)",
     brandSubtitle: "एआई-सहायक पूर्व शिक्षण मान्यता (RPL) मूल्यांकन मंच",
     tradeLabel: "इलेक्ट्रीशियन ट्रेड (NSQF स्तर 4)",
     dashboard: "डैशबोर्ड",
@@ -175,7 +175,7 @@ export const translations = {
 
   mr: {
     // Brand & Navigation
-    brandName: "आरपीएल असिस्ट",
+    brandName: "मार्गवेध (MargVedha)",
     brandSubtitle: "एआय-सहाय्यित पूर्व शिक्षण मान्यता (RPL) मूल्यमापन व्यासपीठ",
     tradeLabel: "इलेक्ट्रिशियन व्यवसाय (NSQF स्तर ४)",
     dashboard: "डॅशबोर्ड",

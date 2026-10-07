@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import { db } from "../services/storage/database.js";
 
-const JWT_SECRET = process.env.JWT_SECRET || "rpl_assist_super_secret_jwt_key_sih_2026_dev";
+const JWT_SECRET = process.env.JWT_SECRET || "rpl_assist_super_secret_jwt_key_production_dev";
 
 export function authenticate(req, res, next) {
   const authHeader = req.headers.authorization;

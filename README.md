@@ -2,7 +2,7 @@
 
 > **Subtitle:** AI-Assisted Recognition of Prior Learning Assessment Platform for India's Informal Trade Workforce  
 > **Initial Trade Focus:** ELECTRICIAN (NSQF Level 4 • QP Code: `ELE/Q1401`)  
-> **Developed for:** Smart India Hackathon (SIH 2026) Prototype Submission  
+> **Framework:** National Skills Qualification Framework (NSQF) & NCVET Guidelines  
 
 ---
 
@@ -58,7 +58,7 @@ While NCVET's **Recognition of Prior Learning (RPL)** framework exists to evalua
 
 ## 4. Primary User Roles & Demo Credentials
 
-The platform includes **1-Click Hackathon Evaluator Login** on the login page and top Demo Navigator bar:
+The platform includes **1-Click Demo & Role Login** on the login page and top Workflow Navigator bar:
 
 | Role | Demo Name | Email | Password | Primary Console |
 |---|---|---|---|---|
@@ -68,9 +68,9 @@ The platform includes **1-Click Hackathon Evaluator Login** on the login page an
 
 ---
 
-## 5. End-to-End Workflow (The 10 Hackathon Demo Steps)
+## 5. End-to-End Workflow (The 10 Platform Assessment Steps)
 
-Use the top **Hackathon Demo Navigator** to click through or run the complete 3–5 minute presentation:
+Use the top **Workflow Navigator** to click through or run the complete evaluation flow:
 
 1. **Step 1: Worker Login:** Candidate accesses personalized portal; views NSQF Level 4 target and 7-step roadmap.
 2. **Step 2: Self-Declaration:** 5-step intuitive form declaring years of experience, task checkboxes, voice/text description, and tools used.
@@ -88,7 +88,7 @@ Use the top **Hackathon Demo Navigator** to click through or run the complete 3�
 ## 6. Project Structure
 
 ```
-SIH 26242/
+rpl-assist/
 ├── backend/
 │   ├── src/
 │   │   ├── config/
@@ -129,7 +129,7 @@ SIH 26242/
 │   ├── src/
 │   │   ├── components/
 │   │   │   └── common/
-│   │   │       ├── DemoBar.jsx       # 1-Click Hackathon Flow Navigator & Role Switcher
+│   │   │       ├── DemoBar.jsx       # 1-Click Workflow Navigator & Role Switcher
 │   │   │       ├── Footer.jsx        # NCVET disclaimer & certification safeguards
 │   │   │       ├── LanguageSelector.jsx
 │   │   │       ├── Navbar.jsx        # Role-based navigation & notification popover
@@ -201,7 +201,7 @@ npm install
 PORT=5000
 NODE_ENV=development
 MONGO_URI=mongodb://localhost:27017/rpl_assist
-JWT_SECRET=rpl_assist_super_secret_jwt_key_sih_2026_dev
+JWT_SECRET=rpl_assist_super_secret_jwt_key_production_dev
 AI_PROVIDER=mock
 # Optional real AI provider key (e.g. Gemini or OpenAI)
 AI_API_KEY=

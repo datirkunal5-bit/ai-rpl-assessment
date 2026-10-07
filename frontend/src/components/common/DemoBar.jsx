@@ -58,7 +58,7 @@ export default function DemoBar() {
         <div className="flex items-center gap-2">
           <span className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-blue-600/40 border border-blue-400/30 text-blue-300 font-semibold uppercase tracking-wider text-[10px]">
             <Sparkles className="w-3 h-3 text-amber-400" />
-            Hackathon Demo Navigator
+            Workflow Navigator
           </span>
           <span className="hidden sm:inline text-slate-400">
             Current: <strong className="text-white capitalize">{user?.role || 'Guest'}</strong> ({user?.name || 'Not logged in'})

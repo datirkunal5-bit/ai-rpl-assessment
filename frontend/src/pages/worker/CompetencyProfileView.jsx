@@ -31,7 +31,7 @@ export default function CompetencyProfileView() {
         const res = await api.getCompetencyProfile(user?.id);
         if (res.competencyProfile) {
           setProfile(res.competencyProfile);
-          // Trigger celebratory confetti for hackathon wow factor!
+          // Trigger celebratory confetti for candidate achievement
           try {
             confetti({
               particleCount: 80,
@@ -144,8 +144,8 @@ export default function CompetencyProfileView() {
 
         {/* Certificate Header */}
         <div className="text-center pb-8 border-b-2 border-slate-200">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-blue-900 text-white shadow-md mb-3">
-            <Zap className="w-8 h-8 text-amber-400 fill-amber-400" />
+          <div className="flex justify-center mb-3">
+            <img src="/logo.png" alt="MargVedha Logo" className="h-14 w-auto object-contain" />
           </div>
           <h2 className="text-xs font-black uppercase tracking-widest text-slate-500">
             National Skills Qualification Framework (NSQF) • Recognition of Prior Learning

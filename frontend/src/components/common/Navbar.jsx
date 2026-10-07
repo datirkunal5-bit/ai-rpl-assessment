@@ -52,7 +52,7 @@ export default function Navbar() {
             <span className="text-blue-400 font-medium">Trade: Electrician (ELE/Q1401)</span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="hidden md:inline text-slate-400">Smart India Hackathon 2026 Prototype</span>
+            <span className="hidden md:inline text-slate-400">National RPL Assessment System</span>
             <LanguageSelector compact={true} />
           </div>
         </div>
@@ -63,18 +63,19 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo & Platform Name */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-700 via-blue-800 to-slate-900 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-              <Zap className="w-6 h-6 text-amber-400 fill-amber-400" />
-            </div>
-            <div>
+            <img 
+              src="/logo.png" 
+              alt="MargVedha Logo" 
+              className="h-10 w-auto object-contain transition-transform group-hover:scale-105" 
+            />
+            <div className="hidden sm:block border-l border-slate-200 pl-3">
               <div className="flex items-center gap-1.5">
-                <span className="font-display font-extrabold text-xl text-slate-900 tracking-tight">RPL Assist</span>
-                <span className="bg-blue-100 text-blue-800 text-[10px] font-bold px-1.5 py-0.2 rounded border border-blue-200">
-                  AI + Human Assessor
+                <span className="bg-blue-100 text-blue-800 text-[10px] font-bold px-1.5 py-0.5 rounded border border-blue-200">
+                  RPL AI Platform
                 </span>
               </div>
-              <p className="text-[11px] text-slate-500 font-medium leading-none">
-                Prior Learning Assessment Platform
+              <p className="text-[10px] text-slate-500 font-medium leading-none mt-0.5">
+                Prior Learning Assessment
               </p>
             </div>
           </Link>

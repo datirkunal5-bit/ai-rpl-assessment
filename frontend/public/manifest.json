@@ -1,6 +1,6 @@
 {
-  "name": "RPL Assist - AI-Assisted Recognition of Prior Learning",
-  "short_name": "RPL Assist",
+  "name": "MargVedha - AI-Assisted Recognition of Prior Learning",
+  "short_name": "MargVedha",
   "description": "Skill recognition & standardized assessment platform for informal workers",
   "start_url": "/",
   "display": "standalone",
@@ -8,14 +8,9 @@
   "theme_color": "#1e3a8a",
   "icons": [
     {
-      "src": "/vite.svg",
-      "sizes": "192x192",
-      "type": "image/svg+xml"
-    },
-    {
-      "src": "/vite.svg",
-      "sizes": "512x512",
-      "type": "image/svg+xml"
+      "src": "/favicon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
     }
   ]
 }

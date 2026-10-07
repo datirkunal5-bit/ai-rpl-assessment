@@ -52,24 +52,24 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-slate-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
-        <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-700 text-white shadow-md mb-3">
-          <Zap className="w-7 h-7 text-amber-400 fill-amber-400" />
+        <div className="flex justify-center mb-3">
+          <img src="/logo.png" alt="MargVedha Logo" className="h-16 w-auto object-contain" />
         </div>
         <h2 className="text-2xl font-black font-display text-slate-900 tracking-tight">
-          RPL Assist Access Portal
+          MargVedha Access Portal
         </h2>
         <p className="mt-1 text-xs text-slate-500 font-medium">
-          Recognition of Prior Learning Assessment & Certification Platform
+          Recognition of Prior Learning (RPL) Assessment & Certification Platform
         </p>
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        {/* Hackathon 1-Click Demo Accounts Card */}
+        {/* Quick 1-Click Demo Accounts Card */}
         <div className="bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 rounded-xl p-5 mb-5 text-white shadow-lg border border-blue-500/30">
           <div className="flex items-center gap-2 mb-3">
             <Sparkles className="w-4 h-4 text-amber-400" />
             <h3 className="text-xs font-bold uppercase tracking-wider text-amber-300">
-              One-Click Hackathon Evaluator Login
+              One-Click Demo & Evaluation Login
             </h3>
           </div>
           <p className="text-[11px] text-slate-300 mb-3">
